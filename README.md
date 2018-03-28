@@ -13,6 +13,14 @@ git clone --recursive http://github.com/yjxiong/dense_flow
 mkdir build && cd build
 cmake .. && make -j
 ```
+My installation
+
+```
+git clone --recursive http://github.com/yjxiong/dense_flow
+mkdir build && cd build
+cmake -DPYTHON_LIBRARIES=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu/libpython3.5m-pic.a -DCUDA_USE_STATIC_CUDA_RUNTIME=OFF ..
+make -j
+```
 
 ### Usage
 ```
